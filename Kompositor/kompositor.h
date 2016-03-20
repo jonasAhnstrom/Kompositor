@@ -19,11 +19,7 @@ public:
 
 	void mousePressEvent(QMouseEvent *e);
 	int pixelToHojd(int ypixel);
-	void PaintEvent(QPaintEvent *e);
-
-public Q_SLOTS:
-	void fjardedelsnotKlickad();
-	void spelaKlickad();
+	void paintEvent(QPaintEvent *e);
 
 private:
 	Ui::KompositorClass ui;
@@ -32,6 +28,9 @@ private:
 	Notblad _notblad;
 	Synthesizer _synthesizer;
 
+private slots:
+	void fjardedelsnotKlickad();
+	void spelaKlickad();
 };
 
 #endif // KOMPOSITOR_H

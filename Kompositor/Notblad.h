@@ -1,5 +1,6 @@
 #pragma once
 #ifndef NOTBLAD_H
+#define NOTBLAD_H
 
 #include <vector>
 #include "Not.h"

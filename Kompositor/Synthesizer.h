@@ -1,10 +1,15 @@
 #pragma once
 #pragma comment(lib, "Winmm.lib")
+
+#ifndef SYNTHESIZER_H
+#define SYNTHESIZER_H
+
 #include <windows.h>   /* required before including mmsystem.h */
 #include <mmsystem.h>  /* multimedia functions (such as MIDI) for Windows */
 #include <iostream>
 #include <chrono>
 #include <thread>
+
 class Synthesizer
 {
 public:
@@ -17,3 +22,4 @@ private:
 
 };
 
+#endif // SYNTHESIZER_H

@@ -25,13 +25,6 @@ void Kompositor::mousePressEvent(QMouseEvent *e)
 	}
 	repaint();
 
-	vector<Not*> notVector = _notblad.hamtaNoter();
-	for (int i = 0; i < notVector.size(); i++)
-	{
-		//int xPos = +ui.label_notblad->x() + (i * notVector[i]->hamtaLangd());
-		int xPos = 100;
-		notVector[i]->skrivUt(xPos);
-	}
 }
 
 int Kompositor::pixelToHojd(int ypixel){
@@ -47,9 +40,15 @@ int Kompositor::pixelToHojd(int ypixel){
 	return hojd;
 }
 
-void Kompositor::PaintEvent(QPaintEvent *e)
+void Kompositor::paintEvent(QPaintEvent *e)
 {
-	
+	vector<Not*> notVector = _notblad.hamtaNoter();
+	for (int i = 0; i < notVector.size(); i++)
+	{
+		//int xPos = +ui.label_notblad->x() + (i * notVector[i]->hamtaLangd());
+		int xPos = 100;
+		notVector[i]->skrivUt(xPos);
+	}
 }
 
 void Kompositor::fjardedelsnotKlickad()

@@ -1,5 +1,6 @@
 #pragma once
-#ifndef NOTBLAD_H
+#ifndef NOT_H
+#define NOT_H
 
 #include <qpixmap.h>
 #include <QPainter>
@@ -26,4 +27,4 @@ private:
 };
 
 
-#endif // NOTBLAD_H
+#endif // NOT_H

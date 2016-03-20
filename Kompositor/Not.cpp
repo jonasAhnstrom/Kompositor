@@ -38,5 +38,5 @@ int Not::hamtaLangd() const
 
 void Not::spelaUpp(Synthesizer *synth)
 {
-	synth->spela(_hojd, _langd, 40);
+	synth->spela(_hojd, _langd, 120);
 }
