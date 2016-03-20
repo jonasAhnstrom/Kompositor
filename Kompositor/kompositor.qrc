@@ -1,4 +1,13 @@
 <RCC>
-    <qresource prefix="Kompositor">
-    </qresource>
+  <qresource prefix="Kompositor">
+    <file>Resources/eight.png</file>
+    <file>Resources/eightc.png</file>
+    <file>Resources/eightrest.png</file>
+    <file>Resources/half.png</file>
+    <file>Resources/halfc.png</file>
+    <file>Resources/notblad.png</file>
+    <file>Resources/quarter.png</file>
+    <file>Resources/quarterc.png</file>
+    <file>Resources/quarterrest.png</file>
+  </qresource>
 </RCC>

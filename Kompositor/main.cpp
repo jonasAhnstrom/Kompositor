@@ -1,5 +1,6 @@
-#include "kompositor.h"
 #include <QtWidgets/QApplication>
+
+#include "kompositor.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,4 +8,5 @@ int main(int argc, char *argv[])
 	Kompositor w;
 	w.show();
 	return a.exec();
+
 }

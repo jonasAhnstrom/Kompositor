@@ -44,11 +44,17 @@
     <ClCompile Include="GeneratedFiles\Debug\moc_kompositor.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_kompositor.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\qrc_kompositor.cpp">
       <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Notblad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Not.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Synthesizer.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,5 +72,40 @@
     <ClInclude Include="GeneratedFiles\ui_kompositor.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="Notblad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Not.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Synthesizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\eight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\eightc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\eightrest.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\half.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\halfc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\quarter.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\quarterc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\quarterrest.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

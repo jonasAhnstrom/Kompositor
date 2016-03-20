@@ -1,29 +1,229 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>KompositorClass</class>
- <widget class="QMainWindow" name="KompositorClass" >
-  <property name="objectName" >
-   <string notr="true">KompositorClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QMainWindow" name="KompositorClass">
+  <property name="geometry">
    <rect>
-	<x>0</x>
-	<y>0</y>
-	<width>600</width>
-	<height>400</height>
+    <x>0</x>
+    <y>0</y>
+    <width>1028</width>
+    <height>662</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Kompositor</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_half">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>120</y>
+      <width>51</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/half.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_half">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>half</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_quarter">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/quarter.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_quarter">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>quarter</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_eight">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>200</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>eight</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_eight">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>120</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/eight.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_quarterrest">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>200</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>quarterrest</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_quarterrest">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>120</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/quarterrest.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_eightrest">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>200</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>eightrest</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_eightrest">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>100</y>
+      <width>61</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/eightrest.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_spela">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>420</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Spela</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_notblad">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>900</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="kompositor.qrc">:/Kompositor/Resources/notblad.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label_notblad</zorder>
+   <zorder>pushButton_spela</zorder>
+   <zorder>radioButton_eightrest</zorder>
+   <zorder>radioButton_quarterrest</zorder>
+   <zorder>label_eightrest</zorder>
+   <zorder>label_quarterrest</zorder>
+   <zorder>radioButton_eight</zorder>
+   <zorder>label_eight</zorder>
+   <zorder>label_half</zorder>
+   <zorder>label_quarter</zorder>
+   <zorder>radioButton_quarter</zorder>
+   <zorder>radioButton_half</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1028</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="kompositor.qrc"/>
+  <include location="kompositor.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>
