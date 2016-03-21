@@ -2,7 +2,7 @@
 #ifndef NOT_H
 #define NOT_H
 
-#include <qpixmap.h>
+#include <QWidget>
 #include <QPainter>
 #include "Synthesizer.h"
 
@@ -13,7 +13,7 @@ public:
 	Not(int hojd);
 	~Not();
 
-	void skrivUt(int xpos);
+	void skrivUt(int xpos, QWidget *qw);
 	void skrivUtC(int xpos);
 	int hamtaLangd() const;
 	/*int hojdToPixel(int hojd);*/
@@ -25,6 +25,5 @@ private:
 	int _hojd;
 
 };
-
 
 #endif // NOT_H

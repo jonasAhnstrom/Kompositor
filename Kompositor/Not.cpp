@@ -4,24 +4,26 @@
 
 Not::Not(int hojd)
 {
+	if (hojd > 0)
+	{
+		_Qpixmap.load("Resources/quarter.png");
+	}
+	else
+	{
+		_Qpixmap.load("Resources/quarterc.png");
+	}
 	_hojd = hojd;
 	_langd = 500;
-	//_Qpixmap.load(":/Kompositor/Resources/quarter.png");
-	QPixmap pixmap(":/Kompositor/Resources/quarter.png");
-	_Qpixmap = pixmap;
 }
 
 Not::~Not()
 {
 }
 
-void Not::skrivUt(int xpos)
+void Not::skrivUt(int xpos, QWidget *qw)
 {
-	//DrawWindow window(400, 200);
-	//QPainter *pPainter = window.getPainter();
-	
-	QPainter qPainter;
-	qPainter.drawPixmap(xpos, ((_hojd * 8) + 26), _Qpixmap);
+	QPainter qp(qw);
+	qp.drawPixmap(xpos, ( ((_hojd * 8) - 310) / -1 ), _Qpixmap);
 }
 
 int Not::hamtaLangd() const

@@ -11,7 +11,7 @@ enum class Nottyp { halv, Fjardedel, Attondel, Fjardedelspaus, Attondelspaus };
 
 class Notblad
 {
-	
+
 public:
 	Notblad();
 	~Notblad();

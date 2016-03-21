@@ -18,8 +18,8 @@ public:
 	~Kompositor();
 
 	void mousePressEvent(QMouseEvent *e);
-	int pixelToHojd(int ypixel);
 	void paintEvent(QPaintEvent *e);
+	int pixelToHojd(int ypixel);
 
 private:
 	Ui::KompositorClass ui;
