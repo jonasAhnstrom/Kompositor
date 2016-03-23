@@ -7,16 +7,17 @@
 
 using namespace std;
 
-enum class Nottyp { halv, Fjardedel, Attondel, Fjardedelspaus, Attondelspaus };
+
 
 class Notblad
 {
-
+	
 public:
+	enum class Nottyp { Halv, Fjardedel, Attondel, Fjardedelspaus, Attondelspaus };
 	Notblad();
 	~Notblad();
 	
-	void adderaNot(Nottyp not, int hojd);
+	void adderaNot(Nottyp not, int hojd, int plats);
 	vector<Not*> hamtaNoter() const;
 private:
 	vector<Not*> _notVector;

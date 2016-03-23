@@ -137,6 +137,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Attondelsnot.cpp" />
+    <ClCompile Include="Fjardedelsnot.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_kompositor.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -151,6 +153,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Halvnot.cpp" />
     <ClCompile Include="kompositor.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Not.cpp" />
@@ -199,7 +202,10 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Attondelsnot.h" />
+    <ClInclude Include="Fjardedelsnot.h" />
     <ClInclude Include="GeneratedFiles\ui_kompositor.h" />
+    <ClInclude Include="Halvnot.h" />
     <ClInclude Include="Not.h" />
     <ClInclude Include="Notblad.h" />
     <ClInclude Include="Synthesizer.h" />
@@ -222,6 +228,7 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <SubType>Designer</SubType>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

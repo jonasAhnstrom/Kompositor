@@ -56,6 +56,15 @@
     <ClCompile Include="Synthesizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fjardedelsnot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Halvnot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Attondelsnot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="kompositor.h">
@@ -79,6 +88,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Synthesizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Fjardedelsnot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Halvnot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Attondelsnot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

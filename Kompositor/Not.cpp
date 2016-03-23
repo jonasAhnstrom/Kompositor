@@ -1,18 +1,11 @@
 
-#include <qdebug.h>
+//#include <qdebug.h>
 #include "Not.h"
 
-Not::Not(int hojd)
+Not::Not(int hojd, int plats)
 {
-	if (hojd > 0)
-	{
-		_Qpixmap.load("Resources/quarter.png");
-	}
-	else
-	{
-		_Qpixmap.load("Resources/quarterc.png");
-	}
 	_hojd = hojd;
+	_plats = plats;
 	_langd = 500;
 }
 
@@ -20,15 +13,20 @@ Not::~Not()
 {
 }
 
-void Not::skrivUt(int xpos, QWidget *qw)
+void Not::skrivUt(QWidget *qw)
 {
 	QPainter qp(qw);
-	qp.drawPixmap(xpos, ( ((_hojd * 8) - 310) / -1 ), _Qpixmap);
+	qp.drawPixmap(_plats, ( ((_hojd * 8) - 310) / -1 ), _Qpixmap);
 }
 
 int Not::hamtaLangd() const
 {
 	return _langd;
+}
+
+int Not::hamtaPlats() const
+{
+	return _plats;
 }
 
 //int Not::hojdToPixel(int hojd){

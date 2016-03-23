@@ -10,19 +10,21 @@ class Not
 {
 
 public:
-	Not(int hojd);
+	Not(int hojd, int plats);
 	~Not();
 
-	void skrivUt(int xpos, QWidget *qw);
+	void skrivUt(QWidget *qw);
 	void skrivUtC(int xpos);
 	int hamtaLangd() const;
+	int hamtaPlats() const;
 	/*int hojdToPixel(int hojd);*/
 	void spelaUpp(Synthesizer *synth);
 
-private:
+protected:
 	QPixmap _Qpixmap;
 	int _langd;
 	int _hojd;
+	int _plats;
 
 };
 
